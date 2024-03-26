@@ -1,0 +1,1300 @@
+# <center> EXPLORATORY DATA ANALYSIS ON </center>
+ <center><span style="color:green">
+' INDIAN PREMIERE LEAGUE (IPL) '
+</span></center>
+
+The Indian Premier League (IPL) is a professional Twenty20 cricket league held annually in India. It was established in 2008 by the Board of Control for Cricket in India (BCCI) and has since become one of the most popular and lucrative cricket tournaments in the world. It consists of ten franchise teams representing different cities.The tournament takes place during the summer months from March to May. The IPL has its own dedicated slot in the ICC Future Tours Programme, as there are fewer international cricket tours scheduled during the IPL season worldwide.
+
+The IPL is widely recognized as one of the most renowned cricket leagues, attracting players from across the globe. What adds to its competitiveness each year is the thrilling drama that unfolds with every ball.
+
+##### 1. IPL Format and Teams: 
+The IPL follows a round-robin and knockout format, where eight franchise teams compete against 
+each other. Each team represents a specific city or state in India and is owned by various corporations, 
+celebrities, and business tycoons. Some of the prominent teams include Mumbai Indians, Chennai 
+Super Kings, Kolkata Knight Riders, and Royal Challengers Bangalore. 
+
+##### 2. Auction and Player Selection: 
+Before each IPL season, a player auction is conducted, where teams bid for domestic and international 
+players. The auction process is a key aspect of the league, as it determines the composition and 
+strength of each team. Factors such as player performance, past records, and current form influence 
+the bidding process. 
+
+##### 3. Player Categories: 
+Players in the IPL are categorized into three types: batsmen, bowlers, and all-rounders. Batsmen 
+specialize in scoring runs, bowlers focus on taking wickets, and all-rounders contribute in both 
+aspects of the game. Analyzing the performance of players across these categories can provide 
+valuable insights into team strategies and player contributions. 
+
+##### 4. Performance Metrics: 
+Several performance metrics are used to evaluate players in the IPL. Batting average, strike rate, 
+economy rate, and wickets taken are some of the key metrics used to assess player performance. 
+These metrics help determine a player's effectiveness and contribution to the team's success. 
+Analyzing these metrics can reveal trends, patterns, and correlations that can be used to gain a deeper 
+understanding of player performance. 
+
+##### 5. Team Strategies and Formations: 
+Each team in the IPL adopts different strategies and formations to maximize their chances of winning 
+matches. These strategies are influenced by factors such as pitch conditions, player strengths, 
+opposition analysis, and game situations. Analyzing team strategies can provide insights into the 
+decision-making process of team management and the effectiveness of different approaches. 
+
+##### 6. Impact of Home Ground Advantage: 
+Home ground advantage plays a significant role in the IPL. Teams tend to perform better when 
+playing in their home stadiums due to factors such as familiarity with the conditions, crowd support, 
+and comfort. Analyzing the impact of home ground advantage can help identify patterns and trends 
+that affect team performance. 
+
+##### 7. Match Conditions and Pitch Variability: 
+The condition of the pitch plays a significant role in the outcome of an IPL match. Pitches can vary in 
+terms of bounce, pace, and spin, which influence batting and bowling strategies. Analysing the impact 
+of pitch conditions on match results and player performances can provide valuable insights into the 
+game. 
+
+##### 8. Player Form and Fitness: 
+Player form and fitness are crucial factors in the IPL. A player's recent performance and physical 
+condition can impact their contributions to the team. Understanding the concept of player form and 
+fitness will help in evaluating and predicting player performance throughout the tournament. 
+
+##### 9. Team Strategies and Tactics: 
+IPL teams often employ various strategies and tactics to gain an advantage over their opponents. 
+These include fielding placements, bowling changes, batting orders, powerplay strategies, and the use 
+of spinners or fast bowlers. Analysing team strategies and tactics can help identify patterns and trends 
+that contribute to team success. 
+
+##### 10. Fan Engagement and Impact: 
+The IPL is known for its passionate fan base, which plays a crucial role in the tournament's success. 
+Understanding fan engagement and the impact of crowd support on players and teams can provide 
+insights into the psychological aspects of the game. Additionally, analysing social media sentiment 
+and fan reactions can shed light on the overall popularity and impact of the IPL. 
+
+##### 11. IPL as a Business Model: 
+The IPL is not just a cricket tournament but also a successful business model. Understanding the 
+commercial aspects of the IPL, such as sponsorships, broadcasting rights, ticket sales, and revenue 
+generation, can provide insights into the tournament's growth and sustainability. 
+
+##### 12. Evolving Nature of the IPL: 
+The IPL has evolved over the years, with rule changes, new teams, and innovations introduced to 
+enhance the viewer experience. Being aware of the historical context and evolution of the IPL will 
+help in analysing trends, comparing different seasons, and understanding the impact of changes on the 
+game.
+
+#### The objectives of Exploratory Data Analysis (EDA) on the IPL dataset from 2008-2021 are to: 
+
+ Understand the structure of the dataset. 
+
+ Identify the key features and variables in the dataset. 
+
+ Analyse the distribution of the variables and their relationships. 
+
+ Identify any missing or erroneous data. 
+
+ Derive insights and trends from the data. 
+
+ Find out the most successful teams, players and factors contributing to the win or loss 
+of a team. 
+
+### REASONS: Why you choose that dataset? 
+#####  Popularity and Interest: 
+The Indian Premier League (IPL) is one of the most popular and widely 
+followed cricket tournaments in the world. Choosing an IPL dataset allows 
+for analysis and exploration of a dataset that is of significant interest to a 
+large audience, including cricket fans, statisticians, and researchers. 
+
+#####  Rich and Diverse Data: 
+IPL datasets typically contain a wealth of information, including match 
+results, player statistics, team performance, and various other details. This 
+rich and diverse data provides ample opportunities for conducting in-depth 
+analysis, generating insights, and exploring trends within the tournament. 
+
+#####  Real-world Application: 
+The IPL dataset can be used to study and understand various aspects of 
+cricket, such as player performance, team strategies, match outcomes, and 
+the impact of different factors on the game. This real-world application of 
+the dataset makes it relevant and valuable for cricket enthusiasts, sports 
+analysts, and professionals. 
+
+#####  Comparative Analysis: 
+IPL datasets cover multiple seasons and teams, allowing for comparative 
+analysis of different teams' performance, player statistics, and strategies 
+over time. This comparative approach can lead to insights into the 
+evolution of teams, players, and the overall dynamics of the tournament. 
+
+#####  Availability of External Data: 
+IPL datasets can be complemented with additional external data sources, 
+such as weather data, pitch conditions, player profiles, and social media 
+sentiment, to enrich the analysis and create a more comprehensive 
+understanding of the game. This integration of external data sources adds 
+depth and context to the IPL dataset analysis. 
+
+
+##### As a sports analysts, find out the most successful teams, players and factors contributing win or loss of a team.
+
+#### Questions for Analysis
+
+1. First ball of IPL history
+2. Season wise IPL matches
+3. Most IPL Matches played in a Venue
+4. IPL matches played by each team
+5. Which team had won by maximum runs across season
+6. Which team had won by maximum wickets
+7. Which team had won by minimum runs(closest margin)
+8. Which team won by mininmum wickets
+9. Has toss winning helped in match winning
+10. IPL matches hosted in various cities
+11. Top player of Match Winners
+12. Top Umpires of IPL Matches
+13. Number of matches where DL is applied
+14. Number of IPL matches that are Normal, Tie or no result
+15. Number of matches won by batting first or fielding first
+16. Toss Decision and Winning chance
+17. How many matches were tied or with no result in all IPL Seasons
+18. Team's Winning Proportion Each Year
+19. Runs Scored per Over
+20. Teams with most wins at a venue
+21. Does playing on the homeground has any advantages
+22. who are top 10 fielders
+23. Most run scored by IPL Teams
+24. Most IPL runs by a batsman
+25. Average runs by teams in powerplay
+26. Orange cap holder each season
+27. Most sixes in IPL inning
+28. Most boundary's hit by a batsman
+29. Most runs in an IPL season by a player
+30. No of sixes in ipl seasons
+31. Highest total by ipl teams
+32. Most ipl sixes by a batsman
+33. Highest individual ipl score
+34. Most IPL Century by a Player
+35. Most IPL Fifty by a Player
+36. Most runs conceded by a bowler in an inning
+37. Purple cap holders
+38. Most ipl wickets by a bowler(team)
+39. Most IPL wickets by a bowler(Top 10)
+40. Most dot ball by a bowler
+41. Most maiden over by a bowler
+42. Most wickets by an ipl team
+43. Most no balls by an ipl bowler
+44. Most run given by a team in extras
+45. Most wides conceded by an ipl team
+
+## Data Collection
+The dataset has been collected from the following kaggle link : https://www.kaggle.com/datasets/vora1011/ipl-2008-to-2021-all-match-dataset
+
+## Data Ingestion
+First we will import the libraries, we will use to develop a solution for this problem
+
+numpy | pandas - used for data analysis
+
+matplotlib | seaborn - used for data visualization
+
+warnings - used to control warning messages in Python
+
+## Data Description
+
+1.  ID -    It is a unique ID given for each match in the dataset.
+
+
+2. City - 	It tells the city where the match was conducted.
+
+
+3. Date -	It tells the date on which the match was played.
+
+
+4. Season -	It tells the year in which the match was played.
+
+
+5. MatchNumber - The column represents the unique identification number assigned to each match in the tournament. It is a                        sequential number that helps to identify and differentiate one match from another.The match number is used to                    organize and classify the matches chronologically in the dataset. It allows for easy referencing and analysis                    of specific matches based on their unique identification numbers. The match number column is helpful in                          tracking the order of matches played in the IPL, determining the sequence of events, and providing a way to                      identify and retrieve specific match details from the dataset.
+
+
+6. Team1 -	It represents one of the two teams competing in a particular match. It signifies the name or identifier of the first             team involved in the match.
+
+
+7. Team2 - It represents one of the two teams competing in a particular match. It signifies the name or identifier of the second            team involved in the match.
+
+
+8. Venue -	It tells the stadium where the match was played.
+
+
+9. TossWinner - It tells the team name who won the toss.
+
+
+10. TossDecision - 	It tells what the TossWinner chose Bat/Field after winning the toss.
+
+
+11. SuperOver - It tells if a super over was played to determine the winner when the main match ends in a tie. In a Super Over,                 each team gets the opportunity to bat and bowl for one over (six deliveries) each. The team that scores the most                 runs in the Super Over is declared the winner.
+
+                
+12. WinningTeam - 	It tells the name of the team who won the match.
+
+
+13. WonBy - It tells whether the WinningTeam won by Wickets/Runs.
+
+
+14. Margin - It represents the margin of victory or defeat in a particular match. It indicates the difference in runs or wickets              between the winning team and the losing team. When a team wins by runs, the margin will be a positive value                      indicating the number of runs by which the winning team outscored the losing team. On the other hand, if a team                  wins by wickets, the margin will be represented by the number of wickets remaining when the target is achieved.
+
+             
+15. method - This column in the dataset tells us if a match was tied or not.
+
+
+16. Player_of_Match - It contains the names of the Player of the Match.The "Player of the Match" is an award given to the best-                       performing player in a particular match in the IPL.Player of the Match is typically chosen based on their                       outstanding performance, which could include scoring a significant number of runs, taking crucial wickets,                       or making exceptional fielding contributions.
+
+
+17. Team1Players -	It contains names of all players of Team1.
+
+
+18. Team2Players - It contains names of all players of Team2.
+
+
+19. Umpire1 - This column contains name of the Umpire 1. Umpire 1, also known as the on-field umpire, stands behind the wicket                 at the bowler's end. This umpire is responsible for making decisions on LBW (leg before wicket) appeals, judging                 if a batsman is out or not, and signalling boundaries or dismissals.
+
+
+20. Umpire2 - This column contains name of the Umpire 2. Umpire 2, also called the square leg umpire, stands near the square leg               position, which is on the leg side of the pitch, at the opposite end of the on-field umpire. This umpire assists                 the on-field umpire in making decisions, especially for run-outs, stumpings, and checking for no-balls (when a                   bowler's front foot crosses the crease).
+
+
+21. innings - It represents the inning number of the match. 
+
+
+22. overs - It represents the over number within the inning. 
+
+
+23. ballnumber - It represents the ball number within the over. 
+
+
+24. batter - It represents the name or identifier of the batter who faced the ball.
+ 
+ 
+25. bowler - It represents the name or identifier of the bowler who delivered the ball.
+
+
+26. non-striker - It represents the name or identifier of the non-striker at the time. 
+
+
+27. batsman_run - It represents the number of runs scored by the batsman on that ball.
+
+
+28. extras_run - It represents the number of extra runs (like wides or no balls) scored on that ball.
+
+
+29. total_run - It represents the total runs scored (batsman_run + extras_run) on that ball.
+
+
+30. non_boundary - It represents whether the ball resulted in non-boundary runs (like 1s, 2s, 3s) or not
+
+
+31. isWicketDelivery - It represents whether the ball resulted in a wicket or not.
+
+
+32. player_out - It represents the name or identifier of the player who got out on that ball.
+
+
+33. kind - It represents the type of wicket if a wicket occurred on that ball. 
+
+
+34. fielders_involved - It represents the names or identifiers of the fielders involved in the dismissal.
+
+
+35. BattingTeam - It represents the name or identifier of the batting team in that inning. 
+
+
+36. byes - Byes occur when the ball is not touched by the batsman or any part of their equipment, and it goes past the wicket-               keeper and other fielders.The batting team is then awarded runs, which are denoted as byes.
+
+
+37. legbyes - Legbyes occur when the ball hits the batsman's body or any part of their equipment (except the bat), and the ball               then goes to a direction other than the wicket-keeper or slips. The batting team is awarded runs, which are                     denoted as legbyes.
+
+
+38. noballs - A no ball is called when the bowler oversteps the popping crease while delivering the ball, or when they bowl an                 illegal delivery (such as a beamer, which is a dangerous full toss above waist height). When a no ball is called,               the batting team is awarded one run, and the ball is considered a free hit, meaning the batsman cannot get out on               that delivery except by a run-out.
+
+
+39. penalty - A penalty is awarded in cases of disciplinary actions or rule violations by the fielding team. It can result in                 the batting team being awarded extra runs.
+
+
+40. wides - A wide is called when the bowler bowls a delivery that is outside the batsman's reach, either down the leg side or               wide outside the off stump. If the umpire deems the delivery to be unfair, a wide is called, and the batting team is             awarded one run. Additionally, the delivery is replayed.
+
+‘byes', 'legbyes', 'noballs', 'penalty', 'wides': Represents different types of extras given by the bowler 
+on that ball.
+
+## Data Exploration
+
+#Importing necessary libraries
+
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import warnings
+warnings.filterwarnings("ignore")
+
+#Importing the dataset
+
+matches = pd.read_csv(r'C:\Users\DELL\Downloads\IPL_Matches_2008_2022.csv')
+deliveries = pd.read_csv(r'C:\Users\DELL\Downloads\IPL_Ball_by_Ball_2008_2022.csv')
+
+# View the first five rows of the DataFrame
+
+matches.head()
+
+# View the last five rows of the DataFrame
+
+matches.tail()
+
+# View the first five rows of the DataFrame
+
+deliveries.head()
+
+# View the last five rows of the DataFrame
+
+deliveries.tail()
+
+# Sorting the dataset by the column 'ID'
+
+matches = matches.sort_values(by=['ID'])
+matches.head()
+
+# Sorting the dataset by the column 'ID'
+
+deliveries = deliveries.sort_values(by=['ID'])
+deliveries.head()
+
+# Checkig the column names
+
+matches.columns
+
+# Checkig the column names
+
+deliveries.columns
+
+# convert categorical variables into binary dummy variables
+
+deliveries = pd.get_dummies(deliveries, columns=['extra_type'])
+
+# Checking for new generated columns
+
+deliveries.columns
+
+# Renaming erroneous columns
+
+deliveries.rename(columns={'extra_type_byes': 'byes', 'extra_type_legbyes': 'legbyes', 'extra_type_noballs': 'noballs', 
+                           'extra_type_wides': 'wides', 'extra_type_penalty': 'penalty'}, inplace=True)
+
+# Checking the column names
+
+deliveries.columns
+
+# Mergeing the matches and deliveries columns
+
+df = matches.merge(deliveries, on = 'ID')
+df.head()
+
+# View the last five rows of the DataFrame
+
+df.tail()
+
+# Checking the number of rows and columns
+
+df.shape
+
+# View the basic statistics of the numerical columns
+
+df.describe()
+
+# Checking the data type of each column in a DataFrame
+
+df.dtypes
+
+# Checking for the index dtype and column dtypes, non-null values and memory usage
+
+df.info()
+
+# Seeing the column names for the new DataFrame
+
+df.columns
+
+## Data Cleaning
+
+# Looking for null values
+
+df.isna().sum()
+
+#Looking for unique values in 'Season' column
+
+df['Season'].unique()
+
+##### Correcting the wrong year names
+
+df['Season']=df['Season'].replace('2007/08','2008')
+
+df['Season']=df['Season'].replace('2009/10','2010') 
+
+df['Season']=df['Season'].replace('2020/21','2020') 
+
+df['Season'].unique()
+
+df['Season'].unique()
+
+# Checking the unique values in 'Venue' column
+
+df['Venue'].unique()
+
+##### Correcting the names of the Venue
+
+df['Venue'] = df['Venue'].replace('Arun Jaitley Stadium, Delhi','Arun Jaitley Stadium')
+df['Venue'] = df['Venue'].replace('Brabourne Stadium, Mumbai','Brabourne Stadium')
+df['Venue'] = df['Venue'].replace('Eden Gardens, Kolkata','Eden Gardens')
+df['Venue'] = df['Venue'].replace('M Chinnaswamy Stadium','M.Chinnaswamy Stadium')
+df['Venue'] = df['Venue'].replace('MA Chidambaram Stadium, Chepauk, Chennai','MA Chidambaram Stadium')
+df['Venue'] = df['Venue'].replace('MA Chidambaram Stadium, Chepauk','MA Chidambaram Stadium')
+df['Venue'] = df['Venue'].replace('Maharashtra Cricket Association Stadium, Pune','Maharashtra Cricket Association Stadium')
+df['Venue'] = df['Venue'].replace('Punjab Cricket Association IS Bindra Stadium, Mohali','Punjab Cricket Association IS Bindra Stadium')
+df['Venue'] = df['Venue'].replace('Punjab Cricket Association Stadium, Mohali','Punjab Cricket Association IS Bindra Stadium')
+df['Venue'] = df['Venue'].replace('Wankhede Stadium, Mumbai','Wankhede Stadium')
+df['Venue'] = df['Venue'].replace('Rajiv Gandhi International Stadium, Uppal','Rajiv Gandhi International Stadium')
+df['Venue'] = df['Venue'].replace('Feroz Shah Kotla','Arun Jaitley Stadium')
+df['Venue'] = df['Venue'].replace('Sardar Patel Stadium, Motera','Narendra Modi Stadium, Ahmedabad')
+df['Venue'] = df['Venue'].replace('Subrata Roy Sahara Stadium','Maharashtra Cricket Association Stadium')
+df['Venue'] = df['Venue'].replace('Sheikh Zayed Stadium','Zayed Cricket Stadium')
+df['Venue'] = df['Venue'].replace('Zayed Cricket Stadium, Abu Dhabi','Zayed Cricket Stadium')
+df['Venue'] = df['Venue'].replace('Dr DY Patil Sports Academy, Mumbai','Dr DY Patil Sports Academy')
+
+df['Venue'].unique()
+
+# just filling city with venue values and the renaming it to city names
+
+df.City.fillna(df.Venue, inplace=True)
+df['City'].unique()
+
+df['City'] = df['City'].replace('Dubai International Cricket Stadium','Dubai')
+df['City'] = df['City'].replace('Sharjah Cricket Stadium','Sharjah')
+df['City'] = df['City'].replace('Navi Mumbai','Mumbai')
+df['City'] = df['City'].replace('Bangalore','Bengaluru')
+
+df['City'].unique()
+
+#Looking for unique values in Batting Team column and replacing the values with the correct ones
+
+df['BattingTeam'].unique()
+
+df.BattingTeam = df['BattingTeam'].replace('Rising Pune Supergiants','Rising Pune Supergiant')
+df.BattingTeam = df['BattingTeam'].replace('Delhi Daredevils','Delhi Capitals')
+df.BattingTeam = df['BattingTeam'].replace('Deccan Chargers','Sunrisers Hyderabad')
+df.BattingTeam = df['BattingTeam'].replace('Kings XI Punjab','Punjab Kings')
+
+df['BattingTeam'].unique()
+
+#Looking for unique values in Team1 column and replacing the values with the correct ones
+
+df.Team1.unique()
+
+df.Team1 = df['Team1'].replace('Rising Pune Supergiants','Rising Pune Supergiant')
+df.Team1 = df['Team1'].replace('Delhi Daredevils','Delhi Capitals')
+df.Team1 = df['Team1'].replace('Deccan Chargers','Sunrisers Hyderabad')
+df.Team1 = df['Team1'].replace('Kings XI Punjab','Punjab Kings')
+
+df.Team1.unique()
+
+#Looking for unique values in Team2 column and replacing the values with the correct ones
+
+df.Team2.unique()
+
+df.Team2 = df['Team2'].replace('Rising Pune Supergiants','Rising Pune Supergiant')
+df.Team2 = df['Team2'].replace('Delhi Daredevils','Delhi Capitals')
+df.Team2 = df['Team2'].replace('Deccan Chargers','Sunrisers Hyderabad')
+df.Team2 = df['Team2'].replace('Kings XI Punjab','Punjab Kings')
+
+df.Team2.unique()
+
+#Looking for unique values in Winning Team column and replacing the values with the correct ones
+
+df.WinningTeam.unique()
+
+df.WinningTeam = df['WinningTeam'].replace('Rising Pune Supergiants','Rising Pune Supergiant')
+df.WinningTeam = df['WinningTeam'].replace('Delhi Daredevils','Delhi Capitals')
+df.WinningTeam = df['WinningTeam'].replace('Deccan Chargers','Sunrisers Hyderabad')
+df.WinningTeam = df['WinningTeam'].replace('Kings XI Punjab','Punjab Kings')
+
+df.WinningTeam.unique()
+
+#Looking for unique values in the TossWinner column and replacing the values with the correct ones
+
+df.TossWinner.unique()
+
+df.TossWinner = df['TossWinner'].replace('Rising Pune Supergiants','Rising Pune Supergiant')
+df.TossWinner = df['TossWinner'].replace('Delhi Daredevils','Delhi Capitals')
+df.TossWinner = df['TossWinner'].replace('Deccan Chargers','Sunrisers Hyderabad')
+df.TossWinner = df['TossWinner'].replace('Kings XI Punjab','Punjab Kings')
+
+df.TossWinner.unique()
+
+###### Analysing unique values in method, WonBy,SuperOver and Margin columns
+
+df['method'].unique()
+
+The D/L method works using the notion that teams have two resources with which to make as many runs as they can - these are the number of overs they have still to receive and the number of wickets they have in hand. From any stage in their innings, their further run-scoring capability depends on both these two resources in combination.
+
+df['WonBy'].unique()
+
+df['SuperOver'].unique()
+
+df['Margin'].unique()
+
+# these are matches that are called off so we will decide about it later
+
+df[df.WinningTeam.isna()].groupby('Season').MatchNumber.unique()
+
+#checking if only null values are not out rows, as out rows will have wicket delivery = 1 and player out will have name in it.
+
+df[df['isWicketDelivery']== 0].player_out.isna().sum() == df.player_out.isna().sum()
+
+## General Analysis of IPL Matches 
+
+###### (Univariate Analysis / Bivariate Analysis / Multivariate Analysis)
+
+### 1. First Ball of IPL History
+
+print(df.iloc[0])
+
+The first ball of IPL history was played on 2008-04-18 in Bengaluru between RCB and KKR with SB Joshi and P Kumar at striker and non-striker end respectively. LR Shukla had bowled the very first ball to SB Joshi which was caught by BB McCullum resulting in the bowler taking a wicket. 
+
+### 2. Season Wise IPL Matches
+
+# Getting the data
+data = df.groupby(['ID','Season']).count().index.droplevel(level=0).value_counts().sort_index()
+print('Number of matches played in each season are: \n')
+print(data)
+
+#Plotting
+plt.figure(figsize=(10,8))
+sns.barplot(y=data.index,x=data,orient='h')
+plt.title('Season Wise IPL Matches')
+plt.xlabel('No of Matches Played')
+plt.ylabel('Season')
+plt.show()
+
+Maximum number of IPL Matches were played in the year 2013(76) whereas Minimum number of matches were played in the year 2009(57)
+
+### 3. Most IPL Matches played in a Venue
+
+# Getting the data
+data1 = df.groupby(['Venue','ID']).count().droplevel(level=1).index.value_counts().sort_index()
+print('Number of matches played at IPL Venues \n')
+print(data1)
+
+#Plotting
+plt.figure(figsize=(10,8))
+sns.barplot(y=data1.index,x=data1,orient='h')
+plt.title('Number of matches played at IPL Venues')
+plt.xlabel('Matches Played')
+plt.ylabel('Venue')
+plt.show()
+
+Most IPL Matches were played at Wankhede Stadium, followed by M.Chinnaswamy Stadium, Eden Gardens and Arun Jaitley Stadium
+
+### 4. IPL Matches Played by Each Team
+
+# Getting data
+data = df['BattingTeam'].value_counts().sort_values(ascending=False)
+print('Number of matches played by each Team \n')
+print(data)
+
+# Plotting
+plt.figure(figsize=(10,8))
+sns.barplot(y=data.index,x=data,orient='h')
+plt.title('Number of matches played by each Team')
+plt.xlabel('Matches Played')
+plt.ylabel('Team')
+plt.show()
+
+### 5. Which Team had won by maximum runs across Season?
+
+# team details
+df.iloc[df['Margin'].where (df.WonBy == 'Runs').idxmax()]
+
+d = df[df.WonBy == 'Runs'].Margin.max()
+df[df.Margin == d].groupby('Season')['WinningTeam'].value_counts()
+
+df.iloc[df['Margin'].where (df.WonBy == 'Runs').idxmax()].WinningTeam
+
+# lets get the list of all win teams by season who got max margin in runs
+d = df[df.WonBy == 'Runs'].Margin.max()
+df[df.Margin == d].groupby('Season')['WinningTeam'].value_counts()
+
+##### Mumbai Indians has won by maximum runs in the season 2017.
+
+### 6. Which Team had won by maximum wickets?
+
+df.iloc[df['Margin'].where (df.WonBy == 'Wickets').idxmax()]
+
+df.iloc[df['Margin'].where (df.WonBy == 'Wickets').idxmax()].WinningTeam
+
+# lets get the list of all win teams by season who got max margin in wickets
+d = df[df.WonBy == 'Wickets'].Margin.max()
+df[df.Margin == d].groupby('Season')['WinningTeam'].value_counts()
+
+##### Sunrisers Hyderabad had won by maximum wickets
+
+### 7. Which Team had won by (closest margin) minimum runs?
+
+# lets get the list of all win teams by season who got min margin in runs that is 1
+d = df[df.WonBy == 'Runs'].Margin.min()
+df[df.Margin == d].groupby('Season')['WinningTeam'].value_counts()
+
+### 8. Which Team had won by minimum wickets?
+
+# lets get the list of all win teams by season who got min margin in wickets that is 1
+d = df[df.WonBy == 'Wickets'].Margin.min()
+df[df.Margin == d].groupby('Season')['WinningTeam'].value_counts()
+
+### 9. Has Toss-winning helped in Match-winning?
+
+d = df.TossWinner == df.WinningTeam
+p = d.groupby(d).count()
+print(p)
+
+colors = sns.color_palette('winter_r')
+plt.pie(p, labels=p.index ,colors = colors,wedgeprops={'linewidth':2,'width':1,'edgecolor':'k'}, autopct = '%0.0f%%')
+plt.show()
+
+##### Toss winning has helped in match winning. The percentage of which is 51%
+
+### 10. IPL matches hosted in various cities
+
+import plotly.express as px
+
+cities = df.groupby(['Season','City'])['ID'].agg('count').reset_index()
+cities.rename(columns={'ID':'count'}, inplace=True)
+
+fig = px.bar(cities, x="City", y="count", color='Season')
+fig.show()
+
+
+
+plt.subplots(figsize=(10,15))
+ax = df['City'].value_counts().sort_values(ascending=True).plot.barh(width=.9,color=sns.color_palette('crest',40))
+ax.set_xlabel('Count')
+ax.set_ylabel('City')
+plt.title("IPL Matches hosted in various cities")
+plt.show()
+
+### 11. Top Player of Match Winners
+
+import plotly.graph_objects as go
+
+pm = df.groupby(['Player_of_Match'])['ID'].count().reset_index('Player_of_Match').rename(columns={'Player_of_Match':'player','ID':'count'})
+pm = pm.sort_values(by="count",ascending=False)
+top_pm=pm[:10]
+
+fig = go.Figure(data=[go.Scatter(
+    x=top_pm['player'], y=top_pm['count'],
+    mode='markers',
+    marker=dict(
+        color=['rgb(93, 164, 214)', 'rgb(255, 144, 14)',
+               'rgb(44, 160, 101)', 'rgb(255, 65, 54)','rgb(92, 65, 54)','rgb(150, 65, 54)','rgb(30, 165, 54)',
+              'rgb(100, 180, 120)', 'rgb(200, 90, 89)', 'rgb(225, 78, 124)'],
+        opacity=[1, 0.9, 0.8,0.7, 0.6,0.5,0.45,0.4,0.35,0.3],
+        size=[100, 90, 80, 70,60,50,40,30,20,10],
+    )
+)])
+
+fig.update_layout(
+    title="Players who recieved 'Player of Match' Award most",
+    xaxis=dict(
+        title='Players',        
+    ),
+    yaxis=dict(
+        title='Number',       
+    ))
+fig.show()
+
+### 12. Top Umpires of IPL Matches
+
+# Umpire 1 
+plt.subplots(figsize=(30,20))
+ax=df['Umpire1'].value_counts().plot.bar(width=1,color=sns.color_palette('twilight_r',20))
+for p in ax.patches:
+    ax.annotate(format(p.get_height()), (p.get_x()+0.15, p.get_height()+1))
+plt.xlabel("Umpires", fontsize=22)
+plt.ylabel("Count", fontsize=22)
+plt.title("Umpires-1 who have umpired most (from highest to lowest)", fontsize=20)
+plt.show()
+
+# Umpire 2
+plt.subplots(figsize=(30,20))
+ax=df['Umpire2'].value_counts().plot.bar(width=1,color=sns.color_palette('rocket_r',20))
+for p in ax.patches:
+    ax.annotate(format(p.get_height()), (p.get_x()+0.15, p.get_height()+1))
+plt.xlabel("Umpires", fontsize=22)
+plt.ylabel("Count", fontsize=22)
+plt.title("Umpires-2 who have umpired most (from highest to lowest)", fontsize=20)
+plt.show()
+
+### 13. Number of matches where D/L is applied
+
+dl_applied_no = df[df['method'].isna()]
+dl_applied_yes = df[df['method'] == 'D/L']
+dl = pd.DataFrame({'dl_applied':['yes','no'],'per':[dl_applied_yes.shape[0], dl_applied_no.shape[0]] })
+
+# Pie Chart for how many matches DL is applied
+fig = px.pie(dl, values='per', names='dl_applied', title='Percentage of matches where DL is applied', color_discrete_sequence=px.colors.sequential.Oranges)
+fig.update_traces(textposition='inside', textinfo='percent+label')
+fig.show()
+
+### 14. Number of IPL matches that are Normal, Tie and No result
+
+# Pie Chart for results of the matches played
+normal = df[df['SuperOver'] == 'N']
+tie = df[df['SuperOver'] == 'Y']
+no_result = df[df['SuperOver'].isna()]
+
+result = pd.DataFrame({'Result':['Normal','Tie','No Result'],'per':[normal.shape[0], tie.shape[0], no_result.shape[0]] })
+
+#labels = result['Result']
+#values = result['per']
+
+fig = px.pie(result, values='per', names='Result', title='Result of matches', color_discrete_sequence=px.colors.sequential.Oranges_r)
+fig.update_traces(textposition='inside', textinfo='percent+label')
+fig.show()
+
+### 15. Number of matches won by batting first or fielding first
+
+# Count the number of matches won by fielding first 
+number_of_matches_won_fielding_first = df[df.WonBy == "Wickets"].count()['WonBy']
+
+# Count the number of matches won by batting first
+number_of_matches_won_batting_first = df[df.WonBy == "Runs"].count()['WonBy']
+
+print('Number of matches won by choosing fielding first: ',number_of_matches_won_fielding_first)
+print('Number of matches won by  batting first: ',number_of_matches_won_batting_first)
+
+plt.pie([number_of_matches_won_batting_first, number_of_matches_won_fielding_first], labels = ["Batting First", "Fielding First"],colors=['darkorange','tan'],wedgeprops={'linewidth':2,'width':1,'edgecolor':'k'},autopct = '%0.0f%%')
+plt.title("Matches Won - Batting First vs Fielding First")
+
+### 16. Toss Decision and Winning chance
+
+match_win_target = match_loss_target = match_win_chassing = match_loss_chassing = 0 
+for i in range(len(matches)) : 
+    if matches.TossDecision.iloc[i] == 'bat' :    # target given
+        if matches.TossWinner.iloc[i] == matches.WinningTeam.iloc[i] : 
+            match_win_target += 1
+        else :
+            match_loss_target += 1
+    else :          # target chased  or chose Fielding 
+        if matches.TossWinner.iloc[i] == matches.WinningTeam.iloc[i] : 
+            match_win_chassing += 1
+        else :
+            match_loss_chassing += 1
+print('{} times captain choose batting option and win the match.'.format(match_win_target))
+print('{} times captain choose batting option but loose the match.'.format(match_loss_target))
+print('{} times captain choose fielding option and win the match.'.format(match_win_chassing))
+print('{} times captain choose fielding option but loose the match.'.format(match_loss_chassing))
+
+plt.pie([match_win_target,match_loss_target,match_win_chassing,match_loss_chassing], labels = ["Chose Batting and Wins", "Chose Batting and Looses","Chose Fielding and Wins", "Chose Fielding and Looses"],
+        colors=['azure','aliceblue','lightblue','powderblue'],wedgeprops={'linewidth':2,'width':1,'edgecolor':'k'},autopct = '%0.0f%%')
+plt.title("Toss Decision and Match Outcome")
+
+### 17. How many matches were tied or with no result in all IPL Seasons
+
+tie_count = matches[matches.WonBy == 'SuperOver'].WonBy.count()
+NR_count = matches[matches.WonBy == 'NoResults'].WonBy.count()
+print('Number of matches which were Tie in all IPL: ',tie_count)
+print('Number of matches which were No Result in all IPL: ',NR_count)
+
+### 18. Team's Winning Proportion Each Year
+
+df.isna().sum()
+
+#using for loop for selecting each year from the list of the years
+for i in df.Season.unique():
+    print("Season :", i,'<', '='*50,'>')
+    xdf=df[df.Season==i] #conditioning over the year
+    xdf=xdf[xdf.WinningTeam!=0] #removing rows of superovers were win team is null
+    plt.pie(xdf.WinningTeam.value_counts(),colors=['bisque','darkorange','burlywood','antiquewhite','tan','navajowhite','blanchedalmond','orange'],
+            wedgeprops={'linewidth':1,'width':1,'edgecolor':'k'},autopct="%1.1f%%" ) #plotting pie chart of the winner's value counts
+    plt.legend(xdf.WinningTeam.value_counts().index,bbox_to_anchor=(2,1),loc='upper right', title='Teams in {}'.format(i))
+    plt.show()
+
+### 19. Run Scored per Over
+
+# grouping with conditions
+xd=df.groupby(['ID', 'overs','innings'], as_index=False)['total_run'].sum()
+
+#changing the range of overs from 0-19 to 1-20
+xd['overs']=xd['overs']+1
+
+#boxplot for distribution
+sns.boxplot(y=xd['total_run'], x=xd['overs'],palette='flare')
+plt.title('Boxplot of Run Scored per Over')
+plt.ylabel('Runs per Over')
+plt.xlabel('Over')
+
+#grouping for finding maximum, minimum and mean
+minimum=xd.groupby('overs', as_index=False)['total_run'].min()
+maximum=xd.groupby('overs', as_index=False)['total_run'].max()
+mean=xd.groupby('overs', as_index=False)['total_run'].mean()
+
+#plotting lineplot with maximum, minmum and mean
+sns.lineplot(data=maximum, x='overs', y='total_run')
+sns.lineplot(data=mean, x='overs', y='total_run')
+sns.lineplot(data=minimum, x='overs', y='total_run')
+plt.legend(['Maximum', 'Mean', 'Minimum'])
+plt.title('Lineplot of Runs Scored per Over')
+plt.xlabel('Over')
+plt.ylabel('Runs per Over')
+
+The plot explains that during powerplay, batsmen play vividly thus increaing runs per over as they are able to confidently hit. At 6th over, there is a decline and then gradualy catches the pace.
+
+### 20. Teams with Most Wins At A Venue
+
+#using for loop for selecting each team from the list of unique winner teams
+pdf = df.dropna(axis=0, how='all', subset=['WinningTeam'])
+for i in pdf.WinningTeam.unique():
+    xdf=pdf[pdf.WinningTeam==i] #conditioning over winning
+    plt.pie(xdf.Venue.value_counts().head(5),colors=['slategrey','lightsteelblue','cornflowerblue','royalblue','ghostwhite'],
+            wedgeprops={'linewidth':1,'width':1,'edgecolor':'k'},autopct="%1.1f%%" ) #using piechart for plotting with value counts over
+    plt.legend(xdf.Venue.value_counts().head(5).index, bbox_to_anchor=(1,1.5),loc='upper right', title=i)
+    plt.show()
+    print(">"*100)
+
+Most of the teams have won most matches on their homegrouds. Though, while selecting stadium, half of the matches from the season take place at the homeground and other half at the homeground of each opponent teams. So, we cannot judge them right now
+
+### 21. Does playing on the homeground has any advantages
+
+#gives homeground of each team
+#i.e. the ground where half of their matches for the season take place
+homeground={}
+for i in pdf.WinningTeam.unique():
+    xdf=pdf[pdf.WinningTeam==i]
+    homeground[i]=xdf.Venue.value_counts().head(1).index[0]
+
+#gives number of matches played by each team on their homeground
+teams_played={}
+for i in homeground:
+    xd=pdf[pdf.Venue==homeground[i]]
+    teams_played[i]=len(xd)
+
+#gives the number of matches won by each team on their homeground
+teams_won={}
+for i in homeground:
+    xd=pdf.loc[(pdf['Venue']==homeground[i]) & (pdf['WinningTeam']==i)]
+    teams_won[i]=len(xd)
+
+#win percentage of each team on their homeground
+win_percentage={}
+for i in homeground:
+    win_percentage[i]=(teams_won[i]/teams_played[i])*100
+win_percentage
+
+#assigning values to the variables
+y=list(win_percentage.values())
+x=list(win_percentage.keys())
+
+#plotting barplot of win % with above values
+sns.barplot(x=x,y=y,palette='crest')
+plt.xticks(rotation=90)
+
+Most of the teams have less than 50% win rate at home grounds
+
+### 22. Who are the top 10 fielders?
+
+#using filtering over dataset
+fd=pdf[(pdf.kind=='caught')]['fielders_involved'].value_counts().head(10)
+fd
+
+sns.barplot(x=fd.index, y=fd,palette='rocket')
+plt.title('Top 10 Fielders')
+plt.xlabel('Name of Fielders')
+plt.ylabel('No. of Catches / Run Outs')
+plt.xticks(rotation=70);
+
+Among the top 10 fielders, top 2 are wicket-keepers so get most of the balls. So, if we consider the entire field, AB de Villiers is among the top fielders.
+
+## IPL Batting Analysis
+
+### 23. Most Run Scored by IPL Teams
+
+data = df.groupby(['BattingTeam'])['total_run'].sum().sort_values(ascending=False)
+print(data)
+sns.barplot(x=data.index, y=data,palette='rocket_r')
+plt.title('Most Runs Scored by IPL Teams')
+plt.xlabel('Teams')
+plt.ylabel('Runs')
+plt.xticks(rotation=70)
+
+MI is at the top of the list.
+
+### 24. Most IPL Runs by a Batsman
+
+plt.figure(figsize=(10,8))
+data = df.groupby(['batter'])['batsman_run'].sum().sort_values(ascending=False)[:10]
+sns.barplot(y=data.index,x=data,orient='h',palette='flare')
+plt.xlabel('Batsman')
+plt.ylabel('Runs')
+plt.show()
+
+Virat Kholi is the batting machine
+
+### 25. Avg Run by Teams in Powerplay
+
+df[df['overs']<6].groupby(['ID','BattingTeam']).sum()['total_run'].groupby('BattingTeam').mean().sort_values(ascending=False)[2:]
+
+Punjab Kings has the highest average of 47.3
+
+### 26. Most IPL Century by a Player
+
+runs = df.groupby(['batter','ID'])['batsman_run'].sum()
+data = runs[runs >= 100].droplevel(level=1).groupby('batter').count().sort_values(ascending=False)[:10]
+sns.barplot(y=data.index,x=data,orient='h',palette='crest')
+plt.xlabel('Centuries')
+plt.ylabel('Batsman')
+plt.show()
+
+Chris Gayle is at the top of the list
+
+### 27. Most IPL Fifty by a Player
+
+plt.figure(figsize=(10,8))
+runs = df.groupby(['batter','Date'])['batsman_run'].sum()
+data = runs[runs >= 50].droplevel(level=1).groupby('batter').count().sort_values(ascending=False)[:10]
+sns.barplot(y=data.index,x=data,orient='h',palette='twilight_r')
+plt.xlabel('Half-Centuries')
+plt.ylabel('Batsman')
+plt.show()
+
+Warner is top in the list followed by Virat Kohli and Shikhar Dhawan
+
+### 28. Most runs in an IPL season by Player
+
+df.groupby(['batter','Season'])['batsman_run'].sum().sort_values(ascending=False)[:10]
+
+Virat Kohli is at the top of the list
+
+### 29. Highest Total by IPL Teams
+
+df.groupby(['Date','BattingTeam']).sum()['total_run'].droplevel(level=0).sort_values(ascending=False)[:10]
+
+### 30. Highest Individual IPL Score
+
+df.groupby(['batter','Date'])['batsman_run'].sum().sort_values(ascending=False)[:10]
+
+### 31. Orange Cap Holder Each Season
+
+data = df.groupby(['Season','batter'])['batsman_run'].sum().groupby('Season').max()
+temp_df=pd.DataFrame(df.groupby(['Season','batter'])['batsman_run'].sum())
+print("{0:10}{1:20}{2:30}".format("Season","Player","Runs"))
+for season,run in data.items():
+    player = temp_df.loc[season][temp_df.loc[season]['batsman_run'] == run].index[0]
+    print(season,'\t ',player,'\t\t',run)
+
+Shaun Marsh became the first winner of the award in 2008
+
+### 32. Most Sixes in an IPL Inning
+
+df[df['batsman_run'] == 6].groupby(['Date','batter']).count()['Season'].sort_values(ascending=False).droplevel(level=0)[:10]
+
+Chris Gayle has hit the highest number of sixes in an inning
+
+### 33. Most Boundary (4s) hit by a Batsman
+
+plt.figure(figsize=(10,8))
+data = df[df['batsman_run'] == 4]['batter'].value_counts()[:10]
+sns.barplot(y=data.index,x=data,orient='h', palette = 'flare')
+plt.xlabel('Fours')
+plt.ylabel('Batsman')
+plt.show()
+
+Shikhar Dhawan is at the top of the list.
+
+### 34. No. of Sixes in IPL Seasons
+
+plt.figure(figsize=(10,8))
+data = df[df['batsman_run'] == 6].groupby('Season').count()['ID'].sort_values(ascending=False)
+sns.barplot(y=data.index,x=data,orient='h',palette='gist_earth')
+plt.xlabel('Sixes')
+plt.ylabel('Season')
+plt.show()
+
+2022 is the season with the most number of sixes hit.
+
+### 35. Most IPL Sixes Hit by a batsman
+
+plt.figure(figsize=(10,8))
+data = df[df['batsman_run'] == 6]['batter'].value_counts()[:10]
+sns.barplot(y=data.index,x=data,orient='h',palette='cividis_r')
+plt.xlabel('Sixes')
+plt.ylabel('Batsman')
+plt.show()
+
+Chris gale is at the top of the list.
+
+## IPL Balling Analysis
+
+### 36. Most runs conceded by a bowler in an inning
+
+
+df.groupby(['bowler','Date'])['total_run'].sum().droplevel(level=1).sort_values(ascending=False)[:10]
+
+Basil Thampi playing for SRH against RCB in the 2008 season has conceded 70 runs.
+
+### 37. Purple cap holders
+
+df.kind  = df.kind.apply(str)
+
+df.kind.unique()
+
+lst = 'caught,bowled,lbw,stumped,caught and bowled,hit wicket'
+data = df[df['kind'].apply(lambda x: True if x in lst and x != ' ' else False)].groupby(['Season','bowler']).count()['ballnumber']
+data=data.sort_values(ascending=False)[:30].sort_index(level=0)
+val=0
+lst=[]
+print("{0:10}{1:20}{2:30}".format("Season","Player","Wickets"))
+for (season,bowler),wicket in data.items():
+    if season == val:
+        lst.append(wicket)        
+    else:
+        print(season,'\t ',bowler,'\t\t',wicket)
+        val = season
+        lst=[]
+
+The bowler with the most wickets in the tournament during the course of the season would wear the Purple Cap.
+
+### 38.  Most ipl wickets by a bowler
+
+lst = 'caught,bowled,lbw,stumped,caught and bowled,hit wicket'
+df[df['kind'].apply(lambda x: True if x in lst and x != ' ' else False)]['bowler'].value_counts()[:10]
+
+Bravo is at the top of the list with 183 wickets.
+
+### 39. Most dot ball by a bowler
+
+plt.figure(figsize=(10,8))
+data = df[df['total_run'] == 0].groupby('bowler').count()['ID'].sort_values(ascending=False)[:10]
+sns.barplot(y=data.index,x=data,orient='h',palette='Purples_r')
+plt.xlabel('Dot Balls')
+plt.ylabel('bowler')
+plt.show()
+
+The Indian bowler Bhubaneshwar Kumar has bowled the most number of Dot balls.
+
+### 40.  Most maiden over by a bowler
+
+data = df.groupby(['Date','bowler','overs'])['total_run'].sum()
+data = data[data.values == 0].droplevel(level=[0,2])
+data.index.value_counts()[:10]
+
+Indian right-hand medium-pacer bowler Praveen Kumar is at the top of the list.
+
+### 41. Most wickets by an ipl team
+
+plt.figure(figsize=(10,8))
+lst = 'caught,bowled,lbw,stumped,caught and bowled,hit wicket'
+data = df[df['kind'].apply(lambda x: True if x in lst and x != ' ' else False)]['BattingTeam'].value_counts()
+df.groupby(['BattingTeam'])['extras_run'].agg('sum').sort_values(ascending=False)
+sns.barplot(y=data.index,x=data,orient='h',palette='Pastel2_r')
+plt.xlabel('Wickets')
+plt.ylabel('Teams')
+plt.show()
+
+Mumbai Indians has taken the most number of wickets in IPl
+
+### 42. Most no balls by an ipl bowler(Team)
+
+df.groupby(['BattingTeam'])['noballs'].agg('sum').sort_values(ascending=False)
+
+RCB has given most no balls.
+
+### 43. Most No Balls by a Bowler (Top 10)
+
+df.groupby(['bowler'])['noballs'].agg('sum').sort_values(ascending=False)[:10]
+
+Jasprit Bumrah has given most no balls
+
+### 44. Most run given by a team in extras
+
+plt.figure(figsize=(10,8))
+data = df.groupby(['BattingTeam'])['extras_run'].agg('sum').sort_values(ascending=False)
+sns.barplot(y=data.index,x=data,orient='h',palette='bone_r')
+plt.xlabel('Runs')
+plt.ylabel('Teams')
+plt.show()
+
+Mumbai Indians has given the most extras
+
+### 45. Most wides conceded by an ipl team
+
+df.groupby(['BattingTeam'])['wides'].agg('sum').sort_values(ascending=False)
+
+Mumbai Indians has given most wides.
+
+## Descriptive Statistics / Distributions
+
+### Finding Probabilities in Normally Distributed Data
+
+When working with normally distributed data, it is essential to calculate probabilities associated with specific values or ranges. The standard normal distribution, which has a mean of 0 and a standard deviation of 1, is often used as a reference.
+
+To find probabilities in normally distributed data, we use the cumulative distribution function (CDF) or standard normal distribution tables. The CDF gives the probability that a random variable is less than or equal to a certain value. By applying z-scores (the number of standard deviations a value is from the mean), we can convert any value from the distribution to the corresponding value on the standard normal distribution.
+
+For instance, to determine the probability that a data point falls below a certain value, we need to calculate the area under the normal curve up to that point. This probability can be obtained directly from the standard normal distribution table or calculated using software tools.
+
+#### Team Score Probability
+
+team_scores = df.groupby(['ID','BattingTeam']).sum('total_run').reset_index()[['ID','BattingTeam','total_run']].rename(columns={'total_run':'scores'})
+team_scores.head()
+
+#### Let's find out what is the probabilty of team scoring 200 runs.
+
+std_norm_dist = (team_scores['scores']-team_scores['scores'].mean())/team_scores['scores'].std()
+sns.histplot(std_norm_dist,kde=True)
+
+std_norm_val = (200-team_scores['scores'].mean())/team_scores['scores'].std()
+std_norm_val
+
+#### By looking at z-table ,for value 1.40 we can say the probability is 9%
+
+## Central Limit Theorem
+
+# batter's record of each match
+batter_record = df.groupby(['ID','batter']).agg({'batsman_run': 'sum', 'ballnumber': 'count'}).reset_index()
+batter_record.rename(columns={'ballnumber':'balls','batsman_run':'score'},inplace=True)
+batter_record['strike_rate'] = np.round((batter_record['score']/batter_record['balls'])*100,0)
+batter_record
+
+sns.kdeplot(batter_record['score'])
+
+#### We can se that it is not folllowing the normal distribution
+
+score = batter_record['score']
+samples=[]
+for i in range(50):
+    samples.append(score.sample(100).values.tolist())
+
+samples = np.array(samples)
+sample_means = samples.mean(axis=1)
+sns.kdeplot(sample_means)
+
+#### Yes, Central Limit Theorem does its work! 
+The Central Limit Theorem states that the mean of a sampling distribution is close to the mean of the population distribution. Additionally, the standard deviation of the sampling distribution is equal to the population standard deviation divided by the square root of the number of samples. Although the sample mean may not be exactly the same, we can provide a range with a 95% confidence interval to account for any variability.
+
+#### Key Points:
+
+- The mean of a sampling distribution approximates the mean of the population distribution.
+- The standard deviation of the sampling distribution is equal to the population standard deviation divided by the square root of the number of samples.
+- We can establish a range with a 95% confidence interval to accommodate any potential variability.
+
+lower_limit = sample_means.mean() - 2*sample_means.std()/np.sqrt(100)
+higher_limit = sample_means.mean() + 2*sample_means.std()/np.sqrt(100)
+print('The score mean can be in range of :',lower_limit,'-',higher_limit)
+
+# Population Mean
+score.mean()
+
+## Hypothesis Testing
+
+### Z-Test
+
+##### Z-Test 
+The Z-test is a statistical test used to determine whether the sample mean differs significantly from the population mean. It is commonly employed when the sample size is large, and the population standard deviation is known.
+
+#### Formula: 
+The formula to perform a Z-test is as follows:
+
+Z = (X̄ - μ) / (σ / √n)
+
+Where:
+
+- Z is the Z-score.
+- X̄ is the sample mean.
+- μ is the population mean.
+- σ is the population standard deviation.
+- n is the sample size.
+
+#### Interpretation: 
+The calculated Z-score is compared to critical values from the standard normal distribution. If the calculated Z-score falls in the rejection region (i.e., it is sufficiently extreme), we reject the null hypothesis and conclude that there is a significant difference between the sample mean and the population mean. Conversely, if the calculated Z-score falls within the non-rejection region, we fail to reject the null hypothesis and conclude that there is not enough evidence to suggest a significant difference.
+
+The Z-test is widely used in hypothesis testing, allowing researchers to make inferences about population parameters based on sample data when the sample size is large and the population standard deviation is known.
+
+#### Example:
+
+#### Null Hypothesis: Ab de Villiers' strike rate is 128(which is average strike rate of all batsman).
+
+#### Alternative Hypothesis: Ab de Villiers' strike rate is higher than 128.
+
+- Null Hypothesis (H0): μ_ab = μ_all
+- Alternative Hypothesis (Ha): μ_ab > μ_all
+Where:
+
+- μ_ab represents the average strike rate of Ab de Villiers.
+- μ_all represents the average strike rate of all batsmen.
+- σ represents the standard deviation of all batsmen's strike rates.
+- n represents the number of matches played by Ab de Villiers.
+- with 0.05 significance level which is 1.65 Z-score
+
+The objective is to test whether Ab de Villiers' strike rate significantly higher from the average strike rate of all batsmen. If the calculated test statistic falls in the rejection region, we reject the null hypothesis and conclude that Ab de Villiers' strike rate is higher than the average. On the other hand, if the test statistic does not fall in the rejection region, we fail to reject the null hypothesis and conclude that there is not enough evidence to suggest a significant difference.
+
+This hypothesis test will help determine whether Ab de Villiers' strike rate stands out compared to the overall average strike rate of all batsmen.
+
+# 'balls > 20' to get better result
+z_test_pop = batter_record[batter_record['balls']>20]
+z_test_pop.head()
+
+abd_balls = df[df['batter']=='AB de Villiers']
+abd_record = abd_balls.groupby('ID').agg({'batsman_run': 'sum', 'ballnumber': 'count'}).reset_index()
+abd_record.rename(columns={'ballnumber':'balls','batsman_run':'score'},inplace=True)
+abd_record['strike_rate'] = (abd_record['score']/abd_record['balls'])*100
+abd_record = abd_record[abd_record['balls']>10]
+
+samples_dist=[]
+for i in range(5):
+    samples_dist.append(abd_record['strike_rate'].sample(30).values.tolist())
+    
+samples_dist = np.array(samples_dist)
+sample_mean = samples_dist.mean(axis=1).mean()
+
+- We run above code to fetch sample from population but in our case Ab devilleirs's records are samples ,still we will run this code to add randomness
+
+avg_strike_rate = z_test_pop['strike_rate'].mean()
+std_strike_rate = z_test_pop['strike_rate'].std()
+
+Z = (sample_mean-avg_strike_rate)/(std_strike_rate/np.sqrt(30))
+Z
+
+##### The p- value is 0.032
+
+##### By running above code we get Z-score greater than 1.65 and P-value less than 0.05, so we regect the null hypothesis
+
+### Findings and Insights
+
+- The most successful team in the IPL history is Mumbai Indians, who have won the title six times in 2013, 2015, 2017, 2019, 2020 and 2021.
+
+- The most valuable player (MVP) of the IPL is Virat Kohli, who has scored the most runs (6,227) and has the highest average (38.16) among the top 10 run-scorers.
+
+- The most dominant bowler in the IPL is Lasith Malinga, who has taken the most wickets (170) and has the best economy rate (6.86) among the top 10 wicket-takers.
+
+- The most thrilling match in the IPL history is the 2019 final between Mumbai Indians and Chennai Super Kings, which was decided by one run in the last ball of the match .
+
+- The most consistent team in the IPL history is Chennai Super Kings, who have qualified for the playoffs 11 times out of the 12 seasons they have played and have reached the final nine times .
+
+- The most explosive batsman in the IPL history is Chris Gayle, who has hit the most sixes (357) and has the highest strike rate (149.45) among the top 10 run-scorers . He also holds the record for the highest individual score (175 not out) in the IPL .
+
+- The most improved team in the IPL history is Delhi Capitals, who have risen from the bottom of the table in 2018 to the top two in 2020 and 2021. They have also reached their first final in 2020 and have won their maiden title in 2021 .
+
+- The most unlucky team in the IPL history is Royal Challengers Bangalore, who have never won the title despite having some of the best players in the world. They have also finished last in the table four times and have lost three finals in 2009, 2011 and 2016 .
+
+### Limitations
+
+- The dataset does not capture all the factors that influence the performance of the teams and players, such as injuries, weather, pitch conditions, umpiring decisions, etc.
+
+- The dataset does not reflect the changes in the rules and formats of the IPL over the years, such as the number of teams, the number of matches, the powerplay overs, the super over, etc.
+
+- The dataset does not account for the quality and strength of the opposition teams and players, which may vary from season to season and affect the outcomes of the matches.
+
+- The dataset does not include some of the important statistics and metrics that are used to measure the performance of the teams and players, such as the net run rate, the win percentage, the average partnership, the bowling strike rate, etc.
+
+### Recommendations
+
+- For the teams that want to improve their performance and chances of winning the title, they should focus on strengthening their bowling and fielding departments, as these are the key factors that differentiate the successful teams from the unsuccessful ones. They should also look for players who can perform well in different conditions and situations, as the IPL is a highly competitive and unpredictable tournament.
+
+- For the players who want to enhance their skills and value in the IPL, they should work on their consistency and adaptability, as these are the qualities that make the MVPs and the explosive batsmen stand out from the rest. They should also try to improve their fitness and stamina, as the IPL is a physically and mentally demanding tournament that requires playing multiple matches in a short span of time.
+
+- For the fans who want to enjoy the IPL and support their favorite teams and players, they should follow the live updates and statistics of the matches on the official IPL website.
+
+### Conclusion
+
+IPL is one of the most popular and competitive cricket tournaments in the world, which showcases the best talent and entertainment in the sport. The IPL has witnessed many memorable moments, records, and achievements over the years, as well as some challenges and controversies. The IPL has also evolved and adapted to the changing needs and preferences of the fans, players, and stakeholders. The IPL has been dominated by a few teams, such as Mumbai Indians and Chennai Super Kings, who have consistently performed well and won the most titles. However, the IPL has also seen some surprises and upsets, such as Delhi Capitals and Royal Challengers Bangalore, who have improved their performance and reached the finals in recent years. The IPL has also featured some of the most outstanding players in the world, such as Virat Kohli and Lasith Malinga, who have excelled in their respective roles and set new benchmarks in the IPL. The IPL has also attracted some of the most explosive batsmen in the world, such as Chris Gayle and AB de Villiers, who have entertained the fans with their spectacular hitting and high scores.IPL is a dynamic and exciting cricket tournament, which has a lot to offer and achieve in the coming years.
